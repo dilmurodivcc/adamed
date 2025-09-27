@@ -1,6 +1,5 @@
 import "../scss/main.scss";
 import AuthGuard from "@/components/AuthGuard";
-import Splash from "@/components/Splash";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -25,7 +24,6 @@ export default function RootLayout({
         <title>Adamed</title>
       </head>
       <body>
-        <Splash />
         <AuthGuard>{children}</AuthGuard>
       </body>
     </html>
