@@ -6,12 +6,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
-  padding: 12px ;
+  padding: 12px;
   background: #ffffff;
   padding-bottom: 30px;
   border-top: 1px solid #f2f2f5;
 
-  
   .tabbar-item {
     display: flex;
     flex-direction: column;
@@ -21,8 +20,18 @@
     font-size: 12px;
     line-height: 150%;
     color: #6b7582;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(42%) sepia(8%) saturate(1018%)
+        hue-rotate(184deg) brightness(95%) contrast(88%);
+    }
   }
-  .tabbar-item.active{
+  .tabbar-item.active {
     color: #121417;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(7%) sepia(4%) saturate(20%)
+        hue-rotate(314deg) brightness(96%) contrast(95%);
+    }
   }
 }

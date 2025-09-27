@@ -3,7 +3,7 @@ import ClientLayout from "@/components/ClientLayout";
 
 export default function HomePage() {
   return (
-    <ClientLayout tabbar={true} activePage={"home"}>
+    <ClientLayout spaceSize={"large"} tabbar={true} activePage={"home"}>
       <main className="page home-page">
         <header className="header">
           <div className="top">
@@ -13,8 +13,12 @@ export default function HomePage() {
           </div>
           <div className="header-input-container">
             <div className="input-container">
-              <img  src="/icons/search.svg" alt="" className="search-icon" />
-              <input type="text" placeholder="Search  pharmacies" className="input" />
+              <img src="/icons/search.svg" alt="" className="search-icon" />
+              <input
+                type="text"
+                placeholder="Search  pharmacies"
+                className="input"
+              />
             </div>
           </div>
         </header>

@@ -23,28 +23,37 @@ export default function AccountPage() {
   ];
 
   return (
-    <ClientLayout tabbar={true} activePage={"account"}>
+    <ClientLayout spaceSize="small" tabbar={true} activePage={"account"}>
       <main className="page account-page">
-        <div className="profile">
-          <div className="avatar placeholder" />
-          <div className="name">Ethan Carter</div>
-          <div className="id">Agent ID: 12345</div>
-          <button className="btn" onClick={handleLogout}>
-            Logout
-          </button>
+        <header className="header">
+          <div className="top">
+            <img src="/icons/arrow.svg" alt="" className="left-side" />
+            <h2 className="pageName">Profile</h2>
+            <div className="empty"></div>
+          </div>
+        </header>
+        <div className="container">
+          <div className="profile">
+            <div className="avatar placeholder" />
+            <div className="name">Ethan Carter</div>
+            <div className="id">Agent ID: 12345</div>
+            <button className="btn" onClick={handleLogout}>
+              Logout
+            </button>
+          </div>
+          <ul className="menu">
+            {items.map((label) => (
+              <li
+                className="menu-row"
+                key={label}
+                onClick={label === "Выйти" ? handleLogout : undefined}
+              >
+                <span>{label}</span>
+                <span>›</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="menu">
-          {items.map((label) => (
-            <li
-              className="menu-row"
-              key={label}
-              onClick={label === "Выйти" ? handleLogout : undefined}
-            >
-              <span>{label}</span>
-              <span>›</span>
-            </li>
-          ))}
-        </ul>
       </main>
     </ClientLayout>
   );

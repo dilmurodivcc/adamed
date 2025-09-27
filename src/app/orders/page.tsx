@@ -3,9 +3,17 @@ import ClientLayout from "@/components/ClientLayout";
 
 export default function OrdersPage() {
   return (
-    <ClientLayout tabbar={true} activePage={"orders"}>
+    <ClientLayout spaceSize={"small"} tabbar={true} activePage={"orders"}>
       <main className="page orders-page">
-        <h2>Cart</h2>
+        <header className="header">
+          <div className="top">
+            <img src="/icons/arrow.svg" alt="" className="left-side" />
+            <h2 className="pageName">Cart</h2>
+            <div className="empty"></div>
+          </div>
+        </header>
+        <div className="container">
+
         <ul className="cart-list">
           {Array.from({ length: 8 }).map((_, i) => (
             <li className="cart-row" key={i}>
@@ -28,6 +36,7 @@ export default function OrdersPage() {
           </div>
         </div>
         <button className="btn primary full">Submit Order</button>
+        </div>
       </main>
     </ClientLayout>
   );

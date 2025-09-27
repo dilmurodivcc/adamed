@@ -3,13 +3,13 @@ import ClientLayout from "@/components/ClientLayout";
 
 export default function PharmaciesPage() {
   return (
-    <ClientLayout tabbar={true} activePage={"pharmacies"}>
+    <ClientLayout spaceSize={"large"} tabbar={true} activePage={"pharmacies"}>
       <main className="page pharmacies-page">
         <header className="header">
           <div className="top">
             <div className="empty"></div>
-            <h2 className="pageName">Product Catalog</h2>
-            <img  src="/icons/filters.svg" alt="" className="right-side" />
+            <h2 className="pageName">Pharmacies</h2>
+            <img src="/icons/filters.svg" alt="" className="right-side" />
           </div>
           <div className="header-input-container">
             <div className="input-container">
