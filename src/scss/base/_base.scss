@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
 .splash-overlay {
   width: 100vw;
   overflow: hidden;

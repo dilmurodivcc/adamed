@@ -1,42 +1,6 @@
 .page {
   padding: 16px 16px 88px;
 }
-.input {
-  background: #f3f3f6;
-  border-radius: 12px;
-  padding: 12px 14px;
-}
-.input input {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  outline: 0;
-}
-.btn {
-  background: #e7f1fb;
-  border: 0;
-  padding: 12px 16px;
-  border-radius: 12px;
-}
-.btn.primary {
-  background: #d9eafc;
-  font-weight: 700;
-}
-.btn.full {
-  width: 100%;
-}
-.placeholder {
-  background: #e9eaef;
-  border-radius: 12px;
-}
-.card.placeholder {
-  width: 120px;
-  height: 120px;
-}
-.thumb.placeholder {
-  width: 48px;
-  height: 48px;
-}
 .product-row {
   display: flex;
   align-items: center;

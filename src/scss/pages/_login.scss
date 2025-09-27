@@ -1,0 +1,18 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // gap: 14px;
+  padding-top: 80px;
+  height: 100vh;
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

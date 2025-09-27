@@ -1,0 +1,14 @@
+.pharmacies-page .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pharmacies-page .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+  margin: 10px 0;
+}

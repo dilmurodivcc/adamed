@@ -25,7 +25,6 @@ export default function Splash() {
       }
     });
 
-    // Ikkalasi ham tugashini kutish
     Promise.all([minDelay, pageLoad]).then(() => {
       setVisible(false);
       sessionStorage.setItem("splashSeen", "1");

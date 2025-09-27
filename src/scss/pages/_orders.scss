@@ -1,0 +1,19 @@
+.cart-row {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.cart-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.orders-page .totals {
+  padding: 12px 0;
+}
+.orders-page .totals .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}

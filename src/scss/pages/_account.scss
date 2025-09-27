@@ -1,0 +1,23 @@
+.account-page .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 0;
+}
+.account-page .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+.account-page .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.account-page .menu-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
