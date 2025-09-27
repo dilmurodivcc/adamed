@@ -8,19 +8,32 @@ export default function TabBar({
 }) {
   return (
     <nav className="tabbar">
-      <Link href="/home" className={active === "home" ? "active" : ""}>
+      <Link
+        href="/home"
+        className={`tabbar-item ${active === "home" ? "active" : ""}`}
+      >
+        <img src="/icons/homeIcon.svg" alt="" />
         Home
       </Link>
       <Link
         href="/pharmacies"
-        className={active === "pharmacies" ? "active" : ""}
+        className={`tabbar-item ${active === "pharmacies" ? "active" : ""}`}
       >
+        <img src="/icons/pharmaIcon.svg" alt="" />
         Pharmacies
       </Link>
-      <Link href="/orders" className={active === "orders" ? "active" : ""}>
+      <Link
+        href="/orders"
+        className={`tabbar-item ${active === "orders" ? "active" : ""}`}
+      >
+        <img src="/icons/ordersIcon.svg" alt="" />
         Orders
       </Link>
-      <Link href="/account" className={active === "account" ? "active" : ""}>
+      <Link
+        href="/account"
+        className={`tabbar-item ${active === "account" ? "active" : ""}`}
+      >
+        <img src="/icons/accountIcon.svg" alt="" />
         Account
       </Link>
     </nav>

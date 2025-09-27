@@ -1,6 +1,5 @@
 "use client";
 import ClientLayout from "@/components/ClientLayout";
-import TabBar from "@/components/TabBar";
 import { useRouter } from "next/navigation";
 
 export default function AccountPage() {
@@ -24,7 +23,7 @@ export default function AccountPage() {
   ];
 
   return (
-    <ClientLayout navbar={true}>
+    <ClientLayout tabbar={true} activePage={"account"}>
       <main className="page account-page">
         <div className="profile">
           <div className="avatar placeholder" />
@@ -47,7 +46,6 @@ export default function AccountPage() {
           ))}
         </ul>
       </main>
-      <TabBar active="account" />
     </ClientLayout>
   );
 }

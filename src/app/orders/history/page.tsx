@@ -3,7 +3,7 @@ import ClientLayout from "@/components/ClientLayout";
 
 export default function OrderHistoryPage() {
   return (
-    <ClientLayout navbar={true}>
+    <ClientLayout tabbar={true} activePage={"orders"}>
       <main className="page order-history-page">
         <h2>Order History</h2>
         <ul className="history">

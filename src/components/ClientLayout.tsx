@@ -1,17 +1,20 @@
 "use client";
-import Navbar from "./Navbar";
+import TabBar from "./TabBar";
 
 export default function ClientLayout({
   children,
-  navbar,
+  tabbar,
+  activePage,
 }: {
   children: React.ReactNode;
-  navbar: boolean;
+  tabbar: boolean;
+  activePage: any;
+
 }) {
   return (
     <>
       {children}
-      {navbar && <Navbar />}
+      {tabbar && <TabBar active={activePage} />}
     </>
   );
 }

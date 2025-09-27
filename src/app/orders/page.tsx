@@ -1,10 +1,9 @@
 "use client";
 import ClientLayout from "@/components/ClientLayout";
-import TabBar from "@/components/TabBar";
 
 export default function OrdersPage() {
   return (
-    <ClientLayout navbar={true}>
+    <ClientLayout tabbar={true} activePage={"orders"}>
       <main className="page orders-page">
         <h2>Cart</h2>
         <ul className="cart-list">
@@ -30,7 +29,6 @@ export default function OrdersPage() {
         </div>
         <button className="btn primary full">Submit Order</button>
       </main>
-      <TabBar active="orders" />
     </ClientLayout>
   );
 }
