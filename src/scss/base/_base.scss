@@ -7,3 +7,27 @@ body {
 .container {
   padding: 0 16px;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+// For Firefox
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+// turn off selector active state blur activees for mobile (button, a etc)
+button:active,
+a:active {
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+}

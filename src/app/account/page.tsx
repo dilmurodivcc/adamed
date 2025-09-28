@@ -11,33 +11,37 @@ export default function AccountPage() {
     } catch {}
   };
   const items = [
-    "Мой профиль",
-    "Мои счета",
-    "Реферальная ссылка",
-    "Операции",
-    "Мои документы",
-    "FAQ",
-    "Служба поддержки",
-    "Настройки",
-    "Выйти",
+    { label: "Мой профиль", icon: "/icons/profile/user.svg" },
+    { label: "Мои счета", icon: "/icons/profile/credit.svg" },
+    { label: "Реферальная ссылка", icon: "/icons/profile/users.svg" },
+    { label: "Операции", icon: "/icons/profile/clock.svg" },
+    { label: "Мои документы", icon: "/icons/profile/file.svg" },
+    { label: "FAQ", icon: "/icons/profile/faq.svg" },
+    { label: "Служба поддержки", icon: "/icons/profile/phone.svg" },
+    { label: "Настройки", icon: "/icons/profile/settings.svg" },
+    { label: "Выйти", icon: "/icons/profile/log-out.svg" },
   ];
 
+  const handleBack = () => {
+    window.history.back();
+  }
   return (
+
     <ClientLayout spaceSize="small" tabbar={true} activePage={"account"}>
       <main className="page account-page">
         <header className="header">
           <div className="top">
-            <img src="/icons/arrow.svg" alt="" className="left-side" />
+            <img width={20} height={20} src="/icons/arrow.svg" onClick={handleBack} alt="" className="left-side" />
             <h2 className="pageName">Profile</h2>
             <div className="empty"></div>
           </div>
         </header>
         <div className="container">
           <div className="profile">
-            <div className="avatar placeholder" />
+            <img width={128} height={128} src="/image/avatar.png" alt="" />
             <div className="name">Ethan Carter</div>
             <div className="id">Agent ID: 12345</div>
-            <button className="btn" onClick={handleLogout}>
+            <button className="btn-primary small" onClick={handleLogout}>
               Logout
             </button>
           </div>
@@ -45,11 +49,13 @@ export default function AccountPage() {
             {items.map((label) => (
               <li
                 className="menu-row"
-                key={label}
-                onClick={label === "Выйти" ? handleLogout : undefined}
+                key={label.label}
+                onClick={label.label === "Выйти" ? handleLogout : undefined}
               >
-                <span>{label}</span>
-                <span>›</span>
+                <span className="menu-label">
+                  <img width={24} height={24} src={label.icon} alt="" /> {label.label}
+                </span>
+                <img src="/icons/chevron-right.svg" alt="" />
               </li>
             ))}
           </ul>

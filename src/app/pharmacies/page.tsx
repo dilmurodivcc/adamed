@@ -18,7 +18,7 @@ export default function PharmaciesPage() {
           <div className="top">
             <div className="empty"></div>
             <h2 className="pageName">Pharmacies</h2>
-            <img src="/icons/filters.svg" alt="" className="right-side" />
+            <img width={20} height={20} src="/icons/filters.svg" alt="" className="right-side" />
           </div>
           <div className="header-input-container">
             <div className="input-container">
@@ -39,7 +39,7 @@ export default function PharmaciesPage() {
                   <div className="title">{pharmacy.name}</div>
                   <div className="subtitle">{pharmacy.address}</div>
                 </div>
-                <button className="btn">Select</button>
+                <button className="btn-primary small">Select</button>
               </li>
             ))}
           </ul>

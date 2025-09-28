@@ -11,18 +11,21 @@ const allProducts = [
   { id: 3, title: "Product C", size: "300mg", dosage: "600mg", image: "/image/productImg3.png" },
 ];
 export default function HomePage() {
+  const handleBack = () => {
+    window.history.back();
+  }
   return (
     <ClientLayout spaceSize={"large"} tabbar={true} activePage={"home"}>
       <main className="page home-page">
         <header className="header">
           <div className="top">
-            <img src="/icons/arrow.svg" alt="" className="left-side" />
+            <img width={20} height={20} src="/icons/arrow.svg" onClick={handleBack} alt="" className="left-side" />
             <h2 className="pageName">Product Catalog</h2>
             <div className="empty"></div>
           </div>
           <div className="header-input-container">
             <div className="input-container">
-              <img src="/icons/search.svg" alt="" className="search-icon" />
+              <img width={20} height={20} src="/icons/search.svg" alt="" className="search-icon" />
               <input
                 type="text"
                 placeholder="Search  pharmacies"
@@ -39,7 +42,7 @@ export default function HomePage() {
             <div className="featured-products">
               {featuredProducts.map((product) => (
                 <div className="product" key={product.id}>
-                  <img src={product.image} alt={product.title} />
+                  <img width={160} height={160} src={product.image} alt={product.title} />
                   <div className="product-info">
                     <h3 className="product-title">{product.title}</h3>
                     <p className="product-size">{product.size}</p>
@@ -62,12 +65,12 @@ export default function HomePage() {
                       <button className="plus">+</button>
                     </div>
                   </div>
-                  <img src={product.image} alt={product.title} />
+                  <img width={130} height={118} src={product.image} alt={product.title} />
                 </div>
               ))}
             </div>
           </section>
-          <button className="add-to-order">Add to Order</button>
+          <button className="btn-primary full">Add to Order</button>
         </div>
       </main>
     </ClientLayout>

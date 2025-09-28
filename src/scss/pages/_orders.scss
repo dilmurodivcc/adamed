@@ -1,19 +1,35 @@
-.cart-row {
-  display: flex;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.cart-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.orders-page .totals {
-  padding: 12px 0;
-}
-.orders-page .totals .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
+.orders-page {
+  .cart-row {
+    display: flex;
+    gap: 12px;
+    padding: 8px 0;
+    align-items: center;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121417;
+  }
+  .subtitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6b7582;
+  }
+  .cart-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .totals {
+    padding-top: 12px;
+  }
+  .totals .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
 }

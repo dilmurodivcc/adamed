@@ -8,22 +8,21 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+export const metadata = {
+  title: "My App",
+  description: "Example with AuthGuard",
+  viewport:
+    "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", // 🔑 zoom bloklandi
+};
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={inter.variable}>
-      <head>
-        <link
-          rel="shortcut icon"
-          href="/public/lifecar.png"
-          type="image/x-icon"
-        />
-        <title>Adamed</title>
-      </head>
-      <body>
+    <html lang="en">
+      <body className={`${inter.variable} font-sans`}>
         <AuthGuard>{children}</AuthGuard>
       </body>
     </html>

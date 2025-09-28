@@ -35,11 +35,11 @@ export default function LoginPage() {
             onChange={(e) => setCode(e.target.value)}
             />
         </div>
-        <button type="submit" className="btn primary">
+        <button type="submit" className="btn-primary full margin0">
           Login
         </button>
       </form>
-            </div>
+           </div>
     </main>
   );
 }

@@ -1,11 +1,25 @@
-.order-history-page .history {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.order-history-page .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
+.order-history-page {
+  .history {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121417;
+  }
+  .subtitle, .date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6b7582;
+  }
 }
