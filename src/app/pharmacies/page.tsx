@@ -1,6 +1,15 @@
 "use client";
 import ClientLayout from "@/components/ClientLayout";
 
+
+const PharmaciesData = [
+  { id: 1, name: "Anytown Pharmacy", address: "123 Main Street, Anytown" },
+  { id: 2, name: "Oak Avenue Pharmacy", address: "123 Main Street, Anytown" },
+  { id: 3, name: "Pine Lane Pharmacy", address: "123 Main Street, Anytown" },
+  { id: 4, name: "Elm Street Pharmacy", address: "123 Main Street, Anytown" },
+  { id: 5, name: "Maple Drive Pharmacy", address: "123 Main Street, Anytown" },
+]
+
 export default function PharmaciesPage() {
   return (
     <ClientLayout spaceSize={"large"} tabbar={true} activePage={"pharmacies"}>
@@ -24,11 +33,11 @@ export default function PharmaciesPage() {
         </header>
         <div className="container">
           <ul className="list">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <li className="row" key={i}>
+            {PharmaciesData.map((pharmacy) => (
+              <li className="row" key={pharmacy.id}>
                 <div className="meta">
-                  <div className="title">Anytown Pharmacy</div>
-                  <div className="subtitle">123 Main Street, Anytown</div>
+                  <div className="title">{pharmacy.name}</div>
+                  <div className="subtitle">{pharmacy.address}</div>
                 </div>
                 <button className="btn">Select</button>
               </li>
