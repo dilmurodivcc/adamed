@@ -1,101 +1,100 @@
+.home-page {
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 128%;
+    color: #121417;
+    margin: 16px 0;
+  }
+  .featured {
+    .featured-products {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      .product {
+        display: flex;
+        flex-direction: column;
+        .product-info {
+          margin-top: 16px;
+        }
+        .product-title {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: #121417;
+        }
+        .product-size {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #6b7582;
+        }
+      }
+    }
+  }
 
-.product-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.product-row .meta {
-  flex: 1;
-}
-.qty {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.action-bar {
-  position: sticky;
-  bottom: 88px;
-  padding: 12px 0;
-  background: linear-gradient(#fff, #fff);
-}
-.cart-row {
-  display: flex;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.cart-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.orders-page .totals {
-  padding: 12px 0;
-}
-.orders-page .totals .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-}
-.pharmacies-page .list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.pharmacies-page .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  background: #fff;
-  border-radius: 12px;
-  margin: 10px 0;
-}
-.account-page .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  padding: 16px 0;
-}
-.account-page .avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-}
-.account-page .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.account-page .menu-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.order-history-page .history {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.order-history-page .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.login-page {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 14px;
-  padding-top: 80px;
-}
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  .products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .product-title,
+        .product-dosage {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #6b7582;
+        }
+        .product-size {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: #121417;
+        }
+        .actions {
+          margin-top: 8px;
+          display: flex;
+          background: #f2f2f5;
+          border-radius: 12px;
+          width: fit-content;
+          padding: 0 15px;
+          .minus,
+          .plus {
+            border: none;
+            background-color: transparent;
+            padding: 5px 10px;
+            font-size: 20px;
+          }
+        }
+      }
+      img {
+        width: 130px;
+        height: 118px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .add-to-order {
+    background: #dbe8f2;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #121417;
+    width: 100%;
+    margin: 24px 0 40px 0;
+  }
 }

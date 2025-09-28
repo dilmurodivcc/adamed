@@ -15,6 +15,8 @@ export default function LoginPage() {
 
   return (
     <main className="page login-page">
+      <div className="container">
+
       <h2 className="title">Log in</h2>
       <form onSubmit={handleLogin} className="login-form">
         <div className="input">
@@ -31,12 +33,13 @@ export default function LoginPage() {
             placeholder="Verification  Code"
             value={code}
             onChange={(e) => setCode(e.target.value)}
-          />
+            />
         </div>
         <button type="submit" className="btn primary">
           Login
         </button>
       </form>
+            </div>
     </main>
   );
 }
