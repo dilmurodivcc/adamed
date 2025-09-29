@@ -10,6 +10,11 @@
   background: #ffffff;
   padding-bottom: 30px;
   border-top: 1px solid #f2f2f5;
+   user-select: none;
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
   .tabbar-item {
     display: flex;
@@ -20,6 +25,7 @@
     font-size: 12px;
     line-height: 150%;
     color: #6b7582;
+   
 
     img {
       filter: brightness(0) saturate(100%) invert(42%) sepia(8%) saturate(1018%)

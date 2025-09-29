@@ -28,7 +28,7 @@ export default function HomePage() {
               <img width={20} height={20} src="/icons/search.svg" alt="" className="search-icon" />
               <input
                 type="text"
-                placeholder="Search  pharmacies"
+                placeholder="Search  product"
                 className="input"
               />
             </div>

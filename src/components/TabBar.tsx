@@ -12,28 +12,28 @@ export default function TabBar({
         href="/home"
         className={`tabbar-item ${active === "home" ? "active" : ""}`}
       >
-        <img src="/icons/homeIcon.svg" alt="" />
+        <img width={24} height={24} src="/icons/homeIcon.svg" alt="" />
         Home
       </Link>
       <Link
         href="/pharmacies"
         className={`tabbar-item ${active === "pharmacies" ? "active" : ""}`}
       >
-        <img src="/icons/pharmaIcon.svg" alt="" />
+        <img width={24} height={24} src="/icons/pharmaIcon.svg" alt="" />
         Pharmacies
       </Link>
       <Link
         href="/orders"
         className={`tabbar-item ${active === "orders" ? "active" : ""}`}
       >
-        <img src="/icons/ordersIcon.svg" alt="" />
+        <img width={24} height={24} src="/icons/ordersIcon.svg" alt="" />
         Orders
       </Link>
       <Link
         href="/account"
         className={`tabbar-item ${active === "account" ? "active" : ""}`}
       >
-        <img src="/icons/accountIcon.svg" alt="" />
+        <img width={24} height={24} src="/icons/accountIcon.svg" alt="" />
         Account
       </Link>
     </nav>
